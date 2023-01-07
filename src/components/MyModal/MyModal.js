@@ -127,27 +127,7 @@ const MyModal = ({ title, fetchParams = {} }) => {
 					/>
 				</Form>
 
-				<style type="text/css">
-					{`
-    					.btn-all, .btn-all:hover {
-      						background-color: #46139f;
-      						color: white;
-    					}
-
-    					.btn-usa, .btn-usa:hover {
-							background-color: #ff7f50;
-      						color: white;
-    					}
-
-    					.btn-close, .btn-close:hover {
-							background-color: white;
-      						color: #46139f;
-							border: 1px solid #46139f;
-    					}
-    				`}
-				</style>
-
-				<Button variant="close" onClick={handleClose}>
+				<Button variant="close-custom" onClick={handleClose}>
 					Close
 				</Button>
 

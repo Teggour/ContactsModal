@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Card, Modal } from "react-bootstrap";
 
 const Contact = ({ contact }) => {
 	const [show, setShow] = useState(false);
@@ -9,7 +9,7 @@ const Contact = ({ contact }) => {
 
 	return (
 		<>
-			<div className="border mx-auto my-3" onClick={handleShow}>
+			<Card body={true} className="my-3" onClick={handleShow}>
 				<p>
 					<b>ID:</b> {contact.id}
 				</p>
@@ -29,7 +29,7 @@ const Contact = ({ contact }) => {
 				<p>
 					<b>Phone:</b> {contact.phone_number}
 				</p>
-			</div>
+			</Card>
 
 			<Modal show={show} onHide={handleClose}>
 				<Modal.Header closeButton>

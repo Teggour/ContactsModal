@@ -15,7 +15,7 @@ const PageLayout = ({ children }) => {
 								src="/logo.svg"
 								width="24"
 								height="24"
-								className="d-inline-block mr-2"
+								className="d-inline-block me-2"
 							/>{" "}
 							Contacts Tech Task
 						</Navbar.Brand>

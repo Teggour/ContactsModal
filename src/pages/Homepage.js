@@ -10,20 +10,6 @@ const Homepage = ({ history }) => {
 	return (
 		<PageLayout>
 			<div className="d-flex flex-column align-items-center">
-				<style type="text/css">
-					{`
-    					.btn-all, .btn-all:hover {
-      						background-color: #46139f;
-      						color: white;
-    					}
-
-    					.btn-usa, .btn-usa:hover {
-							background-color: #ff7f50;
-      						color: white;
-    					}
-    				`}
-				</style>
-
 				<Button
 					variant="all"
 					className="mb-3 mt-5"
